@@ -1,3 +1,4 @@
+
 module.exports = (sequelize, type) => {
 return sequelize.define('film',{
     id:{
@@ -8,6 +9,6 @@ return sequelize.define('film',{
     title: type.STRING,
     description: type.STRING,
     score: type.INTEGER,
-    director: type.STRING
+    director: type.STRING,
 })
 }

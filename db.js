@@ -1,18 +1,18 @@
-const Sequelize = require ('sequelize');
+const Sequelize = require('sequelize');
 
-const FilmModel = require('./models/films')
+const FilmModel = require('./models/films').default
 
-const sequelize = new Sequelize('ixIzPmvFGs', 'ixIzPmvFGs','LTKIrfRe8D',{
-    host:'remotemysql.com',
-    dialect:'mysql'
+const sequelize = new Sequelize('ixIzPmvFGs', 'ixIzPmvFGs', 'LTKIrfRe8D', {
+    host: 'remotemysql.com',
+    dialect: 'mysql'
 });
 
 const Film = FilmModel(sequelize, Sequelize)
 
-sequelize.sync({force:false})
-.then(() => {
-    console.log('TABLAS SINCRONIZADAS')
-})
+sequelize.sync({ force: false })
+    .then(() => {
+        console.log('TABLAS SINCRONIZADAS')
+    })
 
 module.exports = {
     Film

@@ -1,11 +1,12 @@
-const router = require("express").Router();
+const express = require('express');
+const router = express.Router();
 
 const { Film } = require("../../db");
 
 
 router.get("/", async (req, res) => {
   res.send("funcionaaa!!");
-  const films = await Film.findAll();
+  const films = await Film.find();
   res.json(films);
 });
 
