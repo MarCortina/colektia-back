@@ -1,12 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-const { Film } = require("../../db");
+const Film  = require("../../database/models/Films");
+
+
+router.get("/:filmId", async (req, res) => {
+  const films = await Film.findOne({
+    where: {id: req.params.filmId}
+})
+  res.json(films);
+});
 
 
 router.get("/", async (req, res) => {
-  res.send("funcionaaa!!");
-  const films = await Film.find();
+  const films = await Film.findOrCreate();
   res.json(films);
 });
 
