@@ -7,6 +7,8 @@ nvm install 12.0
 #inicio proyecto
 npm init -y
 
+#Correr seed
+npm run seed
 
 npm install express 
 
