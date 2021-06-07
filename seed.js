@@ -1,23 +1,23 @@
 const Film = require('./database/models/Film')
 
 const film1 ={
-    title:"1",
-    description:"fdhsjdhfkjd"
+    title:"Guardianes de las galaxias",
+    description:"Me la recomendo Julia"
 }
 
 const film2 ={
-    title:"2",
-    description:"fdhsjdhfkjd"
+    title:"Avengers",
+    description:"VEr todas el finde que llueve"
 }
 
 const film3 ={
-    title:"3",
-    description:"fdhsjdhfkjd"
+    title:"Los puentes de Madison",
+    description:"Para llorar"
 }
 
 const film4 ={
-    title:"saracarf",
-    description:"fdhsjdhfkjd"
+    title:"La bruja de Blairwitch",
+    description:"Terror y panico"
 }
 
 const filmArray = [film1,film2,film3,film4]
