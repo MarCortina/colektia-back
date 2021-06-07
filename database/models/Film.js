@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../db');
 
-class Films extends Model{}
-Films.init({
+class Film extends Model{}
+Film.init({
     title: DataTypes.STRING,
     description: DataTypes.STRING,
 
@@ -12,5 +12,5 @@ Films.init({
 }
 )
 
-module.exports = Films;
+module.exports = Film;
 

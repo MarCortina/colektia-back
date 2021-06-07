@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Film  = require("../../database/models/Films");
+const Film  = require("../../database/models/Film");
 
 
 router.get("/:filmId", async (req, res) => {
