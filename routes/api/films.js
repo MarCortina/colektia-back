@@ -13,7 +13,7 @@ router.get("/:filmId", async (req, res) => {
 
 
 router.get("/", async (req, res) => {
-  const films = await Film.find();
+  const films = await Film.findAll();
   res.json(films);
 });
 
